@@ -4,40 +4,47 @@ html, body {
     padding: 0;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .header {
-    width:100%;
-    height: 25%;
+    flex: 15%;
     background-color: #70a7df;
 }
 
+.main-content {
+    flex: 60%;
+    display: flex;
+}
+
 .text-block {
-    width: 75%;
-    height: 60%;
-    float:left;
+    flex: 75%;
     background-color: #bce68b;
 }
 
 .image-block {
-    width: 25%;
-    height: 60%;
-    float: right;
+    flex: 25%;
     background-color: #93b071;
     position: relative;
 }
-.image-block img{
+
+.image-block img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .bottom-image {
-    width: 100%;
-    height:15%;
+    flex: 10%;
     background-color: #41f2c2;
     display: flex;
     justify-content: center;
+    max-height: 15%;
 }
-.bottom-image img{
-    height: 100%;
 
+.bottom-image img {
+    max-height: 100%;
 }
